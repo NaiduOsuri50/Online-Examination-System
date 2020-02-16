@@ -1,4 +1,4 @@
-﻿@model aspire1.Models.IndexViewModel
+﻿    @model aspire1.Models.IndexViewModel
 @{
     ViewBag.Title = "Manage";
 }
@@ -76,7 +76,7 @@
                 {
                     using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
-                        @Html.AntiForgeryToken()
+                                @Html.AntiForgeryToken()
                         <text>Disabled
                         <input type="submit" value="Enable" class="btn btn-link" />
                         </text>

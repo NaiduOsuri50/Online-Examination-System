@@ -1,0 +1,114 @@
+﻿@model aspire1.Models.StudentsDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentsDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchDetail.StudentsBatchName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchDetail.StudentsBatchName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BatchDetail1.StudentsBatchName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BatchDetail1.StudentsBatchName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearOfPassing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearOfPassing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentsCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentsCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifiedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModifiedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedBy)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

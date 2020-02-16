@@ -1,0 +1,39 @@
+﻿@model IEnumerable<aspire1.Models.ExamScheduleQuestion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ExamSchedule.LastModifiedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Question.Question1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExamSchedule.LastModifiedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Question.Question1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ExamScheduleQuestionsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ExamScheduleQuestionsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ExamScheduleQuestionsId })
+        </td>
+    </tr>
+}
+
+</table>
